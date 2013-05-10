@@ -7,16 +7,23 @@
     <parent>
         <groupId>org.modeshape</groupId>
         <artifactId>modeshape-parent</artifactId>
-        <version>3.3-SNAPSHOT</version>
+        <version>3.2.0.Final</version>
         <relativePath>../modeshape-parent/pom.xml</relativePath>
     </parent>
 
-  <!-- The groupId and version values are inherited from parent -->
+  <!-- The version value is inherited from parent -->
+    <groupId>be.lettergen.org.modeshape</groupId>
     <artifactId>modeshape-jca</artifactId>
     <packaging>jar</packaging>
     <name>ModeShape JCR-JCA Adaptor</name>
     <description>JCA Resource adaptor</description>
     <url>http://www.modeshape.org</url>
+
+    <scm>
+        <!-- Fixed JCA sources are in release-3.2.0-fixed-jca branch -->
+        <connection>scm:git:https://github.com/albertdev/modeshape.git</connection>
+        <developerConnection>scm:git:https://github.com/albertdev/modeshape.git</developerConnection>
+    </scm>
 
     <dependencies>
         <dependency>
